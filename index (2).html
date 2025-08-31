@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rio | Links</title>
+  <meta name="description" content="All of Rio Kandekore's important links in one place." />
+  <meta property="og:title" content="Rio | Links" />
+  <meta property="og:description" content="All of Rio's important links in one place." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --btn: #1f2937;
+      --btn-hover: #374151;
+      --txt: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22c55e;
+      --ring: rgba(34, 197, 94, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(1200px 600px at 50% -20%, #172554 0%, var(--bg) 60%);
+      color: var(--txt);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 620px;
+      padding: 32px 20px 40px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 28px 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+    header {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-top: 2px;
+      font-size: 15px;
+    }
+    .bio {
+      margin: 12px 0 8px;
+      color: var(--txt);
+      font-size: 15px;
+    }
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      text-decoration: none;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--btn);
+      color: var(--txt);
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+    }
+    .btn:hover {
+      background: var(--btn-hover);
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,0.16);
+      box-shadow: 0 0 0 6px var(--ring);
+    }
+    .btn span.small {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .icon {
+      width: 22px;
+      height: 22px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #059669, var(--accent));
+      color: #052e1a;
+      font-weight: 900;
+    }
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .note {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <img src="profile.jpg" alt="Rio Kandekore" class="avatar" />
+        <div>
+          <h1>Rio Kandekore</h1>
+          <div class="subtitle">Degree Apprentice @ IBM · Manchester, UK</div>
+          <div class="bio">Cloud • Data • AI — documenting the build and sharing progress.</div>
+        </div>
+      </header>
+
+      <div class="links">
+        <a class="btn" href="https://www.linkedin.com/in/rio-k-7b60791b1/" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">in</div>
+            <div>LinkedIn</div>
+          </div>
+          <span class="small">/rio-k-7b60791b1</span>
+        </a>
+
+        <a class="btn" href="https://www.instagram.com/c0delocs/" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">IG</div>
+            <div>Instagram</div>
+          </div>
+          <span class="small">@c0delocs</span>
+        </a>
+
+        <a class="btn" href="https://github.com/rio-kandekore" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">GH</div>
+            <div>GitHub</div>
+          </div>
+          <span class="small">rio-kandekore</span>
+        </a>
+
+        <a class="btn" href="mailto:hello@yourdomain.com">
+          <div class="left">
+            <div class="icon">@</div>
+            <div>Email</div>
+          </div>
+          <span class="small">hello@yourdomain.com</span>
+        </a>
+      </div>
+
+      <footer>
+        <div>Built with ❤️ for clarity and speed.</div>
+        <div class="note">Tip: host this on GitHub Pages and drop the link into your Instagram & LinkedIn bios.</div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
